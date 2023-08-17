@@ -1,0 +1,57 @@
+.card_bg {
+  position: fixed;
+  background: #0000008c;
+  z-index: 99999;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.card {
+  width: 90vw;
+  height: 90vh;
+  min-height: 215px;
+  background-color: #fff;
+  padding: 18px 0px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+}
+
+.card > div:nth-of-type(1) {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 18px;
+  height: 100%;
+}
+
+.close {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .card {
+    height: 100%;
+  }
+}

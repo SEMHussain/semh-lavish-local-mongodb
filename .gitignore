@@ -1,0 +1,7 @@
+node_modules/
+public/uploads/
+public/uploads
+public/product/
+.next/
+.vscode/
+*.zip
